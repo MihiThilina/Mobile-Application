@@ -11,14 +11,12 @@ export default function Login() {
 
       
   
-      <TextInput placeholderTextColor="black" style={styles.input} placeholder="Username" />
-      <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Password" />
-      <TextInput placeholderTextColor="black" style={styles.input3} placeholder="Username" />
-      <TextInput placeholderTextColor="black" style={styles.input4} placeholder="Password" />
-      <TextInput placeholderTextColor="black" style={styles.input5} placeholder="Username" />
-      <TextInput placeholderTextColor="black" style={styles.input6} placeholder="Password" />
-      <TextInput placeholderTextColor="black" style={styles.input7} placeholder="Username" />
-      <TextInput placeholderTextColor="black" style={styles.input8} placeholder="Password" />
+      <TextInput placeholderTextColor="black" style={styles.inputall}  placeholder="Reg Number" />
+      <TextInput placeholderTextColor="black" style={styles.input} placeholder="Brand" />
+      <TextInput placeholderTextColor="black" style={styles.input} placeholder="Price" />
+      <TextInput placeholderTextColor="black" style={styles.input2all} placeholder="Fuel Type" />
+      <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Date" />
+      <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Location" />
       <TouchableOpacity style={styles.btn}>
         <Text style={{color: '#ffffff', fontSize: 20}}> Save</Text>
       </TouchableOpacity>
@@ -30,7 +28,7 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    height:860,
+    height:360,
     backgroundColor:'#ffffff'
     // width:'100vw',
   },
@@ -38,81 +36,47 @@ const styles = StyleSheet.create({
     color: 'black', 
     fontSize: 30, 
     marginRight: '35%',
-    marginTop:'-60%'
+    marginTop:'60%'
+  },
+  inputall:{
+    marginTop:'56%',
+    borderWidth: 1,
+    marginRight: '48%',
+    padding: 10,
+    width: '48%',
+    borderRadius: 10,
   },
   input:{
-    marginTop: '70%',
+    marginTop:'4%',
     borderWidth: 1,
-    marginRight: '56%',
+    marginRight: '48%',
     padding: 10,
-    width: '38%',
+    width: '48%',
+    borderRadius: 10,
+  },
+  input2all:{
+    marginTop:'-42%',
+    borderWidth: 1,
+    marginLeft: '53%',
+    padding: 10,
+    width: '44%',
     borderRadius: 10,
   },
   input2:{
-    marginTop: '5%',
+    marginTop:'4%',
     borderWidth: 1,
-    marginRight: '56%',
+    marginLeft: '53%',
     padding: 10,
-    width: '38%',
-    borderRadius: 10,
-  },
-  input3:{
-    marginTop: '5%',
-    borderWidth: 1,
-    marginRight: '56%',
-    padding: 10,
-    width: '38%',
-    borderRadius: 10,
-  },
-  input4:{
-    marginTop: '5%',
-    borderWidth: 1,
-    marginRight: '56%',
-    padding: 10,
-    width: '38%',
-    borderRadius: 10,
-  },
-  input5:{
-    marginTop: '-63%',
-    borderWidth: 1,
-    marginLeft: '40%',
-    padding: 10,
-    width: '50%',
-    borderRadius: 10,
-  },
-  input6:{
-    marginTop: '5%',
-    borderWidth: 1,
-    marginLeft: '40%',
-    padding: 10,
-    width: '50%',
-    borderRadius: 10,
-  },
-  input7:{
-    marginTop: '5%',
-    borderWidth: 1,
-    marginLeft: '40%',
-    padding: 10,
-    width: '50%',
-    borderRadius: 10,
-  },
-  input8:{
-    marginTop: '5%',
-    borderWidth: 1,
-    marginLeft: '40%',
-    padding: 10,
-    width: '50%',
+    width: '44%',
     borderRadius: 10,
   },
   btn:{
-    padding: 5,
     backgroundColor: 'green',
     height: 50,
-    marginRight:'40%',
-    width :200,
+    width :300,
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: '10%',
-    borderRadius: 100,
+    borderRadius:12,
   }
 });
