@@ -11,7 +11,7 @@ import {
 import React from "react";
 import { Icon } from "react-native-elements";
 import { Box } from "native-base";
-export default function Login() {
+export default function Home({navigation}) {
   return (
     <View style={styles.container}>
       <Box style={styles.textbox}>
@@ -25,7 +25,7 @@ export default function Login() {
       </Box>
 
       <TouchableOpacity style={styles.btn}>
-        <Text style={styles.Text}>Add New Car</Text>
+        <Text onPress={()=>{navigation.navigate("AddVehicals")}} style={styles.Text}>Add New Car</Text>
       </TouchableOpacity>
     </View>
   );

@@ -13,7 +13,7 @@ import {  Box } from "native-base";
 
 import React from "react";
 
-export default function Login() {
+export default function AddVehicals() {
   return (
     <View style={styles.container}>
       <Text style={styles.topic}>Add Vehicals</Text>

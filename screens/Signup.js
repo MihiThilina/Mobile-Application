@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import React from 'react';
 
-export default function Signup() {
+export default function Signup({navigation}) {
   return (
     <View style={styles.container}>
                <Text  style={{color: 'black', fontSize: 50,  marginTop: '-44%'}}> Sign up</Text>
@@ -36,7 +36,7 @@ export default function Signup() {
       />
 
       <TouchableOpacity style={styles.btn}>
-        <Text style={{color: '#fffff', fontSize: 20}}>Sign Up</Text>
+        <Text  onPress={()=>{navigation.navigate("Login")}} style={{color: '#fffff', fontSize: 20}}>Sign Up</Text>
       </TouchableOpacity>
     </View>
   );

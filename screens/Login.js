@@ -4,17 +4,17 @@ import { View, Text,TextInput,Button,StyleSheet, TouchableOpacity,} from 'react-
 import React from 'react';
 
 
-export default function Login() {
+export default function Login({navigation}) {
   return (
     <View style={styles.container}>
       <Text  style={{color: 'black', fontSize: 50,  marginTop: '-34%'}}> Login</Text>
       <TextInput placeholderTextColor="black" style={styles.input1} placeholder="Username" />
       <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Password" />
       <TouchableOpacity style={styles.btn}>
-        <Text style={{color: '#ffffff', fontSize: 20}}> Login</Text>
+        <Text onPress={()=>{navigation.navigate("Home")}} style={{color: '#ffffff', fontSize: 20}}> Login</Text>
       </TouchableOpacity>
       <TouchableOpacity>
-              <Text style={styles.signupText}>Sign Up</Text>
+              <Text onPress={()=>{navigation.navigate("Signup")}} style={styles.signupText}>Sign Up</Text>
       </TouchableOpacity>
     </View>
   );
