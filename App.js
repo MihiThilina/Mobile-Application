@@ -37,15 +37,16 @@ export default function App() {
       {/* <ToggleDarkMode /> */}
       {/* <Signup></Signup> */}
       {/* <Login></Login> */}
+      <Home></Home>
 
-      <NavigationContainer>
+      {/* <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Signup" component={Signup} />
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="AddVehicals" component={AddVehicals} />
         </Stack.Navigator>
-      </NavigationContainer>
+      </NavigationContainer> */}
     </NativeBaseProvider>
   );
 }
